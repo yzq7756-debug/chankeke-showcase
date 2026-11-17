@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ed432b">
+  <meta name="description" content="馋可可手工麻辣，探索手工麻辣与鲜卤鸭货系列。私厨用心做，鲜卤好滋味。">
+  <title>馋可可手工麻辣 · 私厨用心做，鲜卤好滋味</title>
+  <link rel="icon" type="image/png" href="assets/chankeke-logo-transparent.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="content.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#food">跳到美食展示</a>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="馋可可手工麻辣，返回顶部">
+      <img class="brand-logo" src="assets/chankeke-logo-transparent.png" alt="馋可可手工麻辣 Logo" width="1536" height="1024">
+      <span class="brand-copy"><span data-shop-name>馋可可手工麻辣</span><small>HANDMADE · SPICY & DELICIOUS</small></span>
+    </a>
+    <nav aria-label="主导航"><a href="#food">美食展示</a><a class="nav-contact" href="#contact">联系馋可可 <span aria-hidden="true">↗</span></a></nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="little-star" aria-hidden="true">✳</span> 私厨精心制作 · 新鲜现卤</p>
+        <h1 id="hero-title">私厨用心做，<br><span class="headline-accent">鲜卤好滋味<span class="spark" aria-hidden="true">✳</span></span></h1>
+        <p class="hero-description">认真选料，细心料理，把新鲜与用心做进每一口。<br>手工麻辣，现卤入味，是私厨为你准备的好滋味。</p>
+        <a class="primary-link" href="#food">来看看，今天的美味 <span aria-hidden="true">↗</span></a>
+        <div class="hero-footnote"><span class="mini-label">新鲜现卤</span><span>精心手作，用心入味。</span></div>
+      </div>
+      <div class="hero-visual">
+        <img class="hero-image" src="assets/dishes/微信图片_20261113233409_46_2.webp" alt="馋可可真实鸭货拼盘照片" width="1080" height="1620" fetchpriority="high">
+        <div class="hero-sticker" aria-hidden="true"><span>私厨手作</span><strong>新鲜现卤</strong><span>GOOD FOOD, GOOD MOOD</span></div>
+        <span class="image-note">馋可可 · 菜品实拍</span>
+      </div>
+    </section>
+
+    <div class="flavor-strip" aria-hidden="true"><span>鲜卤入味</span><b>✳</b><span>手工麻辣</span><b>✳</b><span>越嚼越香</span><b>✳</b><span>把日子过香</span><b>✳</b></div>
+
+    <section class="food-section section-wrap" id="food" aria-labelledby="food-title">
+      <div class="section-topline"><span class="section-index">01 / 美食展示</span><span class="section-aside">来自厨房的美味提案</span></div>
+      <div class="food-heading"><div><h2 id="food-title">每一口，都有点<span>意思。</span></h2><p>熟悉的家常味，也可以有不一样的打开方式。</p></div><span class="food-count" aria-hidden="true">THE MENU <span>↙</span></span></div>
+      <div class="menu-toolbar">
+        <div class="filters" role="group" aria-label="按美食分类筛选">
+          <button type="button" data-category="全部" aria-pressed="true">全部美味 <span>15</span></button>
+<button type="button" data-category="手工麻辣" aria-pressed="false">手工麻辣 <span>08</span></button>
+<button type="button" data-category="鲜卤鸭货系列" aria-pressed="false">鲜卤鸭货系列 <span>07</span></button>
+        </div>
+        <p class="sample-note">价格与规格按店铺菜单展示 · 人民币</p>
+      </div>
+      <p class="sr-only" id="filter-status" role="status" aria-live="polite"></p>
+      <div class="food-grid" id="food-grid"></div>
+      <noscript><p class="empty-note">请启用 JavaScript，查看手工麻辣与鲜卤鸭货系列菜单。</p></noscript>
+    </section>
+
+    <section class="contact-section section-wrap" id="contact" aria-labelledby="contact-title">
+      <div class="contact-intro"><span class="section-index">02 / 联系方式</span><h2 id="contact-title">关于好吃的，<br>我们慢慢聊<span aria-hidden="true">↗</span></h2><p>有喜欢的味道，或是新鲜的美食想法？<br>期待与你分享厨房里的小小灵感。</p><span class="contact-sticker" aria-hidden="true">聊聊美食，很开心！</span></div>
+      <div class="contact-panel">
+        <div class="contact-details"><div class="contact-row"><span class="contact-icon" aria-hidden="true">聊</span><div><h3>微信联系</h3><p id="wechat-value">待补充</p></div><button id="copy-wechat" class="contact-action" type="button" hidden>复制微信号</button></div><div class="contact-row"><span class="contact-icon" aria-hidden="true">☎</span><div><h3>电话联系</h3><p id="phone-value">待补充</p></div><a id="call-phone" class="contact-action" hidden>拨打电话 ↗</a></div></div>
+        <div class="qr-area"><a class="qr-crop" href="assets/wechat-contact-original.jpg" target="_blank" rel="noopener" aria-label="查看接单客服微信二维码原图"><img src="assets/wechat-contact-original.jpg" alt="馋可可接单客服微信二维码"></a><div><h3>接单客服微信</h3><p>微信扫一扫，咨询或下单<br>点击二维码可查看原图</p></div></div>
+        <p id="contact-status" class="contact-status" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a href="#top" class="footer-name" data-shop-name>馋可可手工麻辣</a><span>私厨用心做，鲜卤好滋味。</span><a href="#top" class="back-top">回到顶部 ↑</a></footer>
+</body>
+</html>
